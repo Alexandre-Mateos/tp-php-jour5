@@ -14,8 +14,17 @@ $_SESSION['accueil'] += 1;
       <title>Document</title>
 </head>
 <body>
+<div>
+      <a href="test.php">test</a>
+      <a href="random.php">random</a>
+      <a href="contact.php">contact</a>
+</div>
+
       <?php foreach($_SESSION as $index => $visited) : ?>
             <p> la page <?php echo $index ?> a été visité <?php echo $visited ?> fois.</p>
       <?php endforeach; ?>
+<div>
+      <a href="destroy-session.php">Réinitialiser les compteurs</a>
+</div>
 </body>
 </html>
